@@ -11,15 +11,20 @@
   <div class="cont">
     <div class="form sign-in">
       <h2>Sign In</h2>
-      <label>
-        <span>Email Address</span>
-        <input type="email" name="email">
-      </label>
-      <label>
-        <span>Password</span>
-        <input type="password" name="password">
-      </label>
-      <a href = "index.html"><button class="submit" type="button">Sign In</button></a>
+      <form class="login_form" action ="index.html" name="form" onsubmit="return validated()">
+        <label>
+          <span>Email Address</span>
+          <input type="email" name="email">
+          <div id="email_error">Please fill up your Email</div>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password">
+          <div id="pass_error">Please fill up your Password</div>
+        </label>
+        <button class="submit">Sign In</button>
+      </form>
+      
       <p class="forgot-pass">Forgot Password ?</p>
 
       <div class="social-media">
@@ -49,23 +54,29 @@
       </div>
       <div class="form sign-up">
         <h2>Sign Up</h2>
+        <form class="login_form" action ="index.html" name="form" onsubmit="return validated()">
         <label>
           <span>Name</span>
           <input type="text">
+          <div id="email_error">Please fill up your Name</div>
         </label>
         <label>
           <span>Email</span>
           <input type="email">
+          <div id="email_error">Please fill up your Email</div>
         </label>
         <label>
           <span>Password</span>
           <input type="password">
+          <div id="pass_error">Please fill up your Password</div>
         </label>
         <label>
           <span>Confirm Password</span>
           <input type="password">
+          <div id="pass_error">Please fill up your Password</div>
         </label>
-       <a href ="index.html"><button type="button" class="submit">Sign Up Now</button></a> 
+       <a href ="login-page.html"><button type="button" class="submit">Sign Up Now</button></a> 
+      </form>
       </div>
     </div>
   </div>
